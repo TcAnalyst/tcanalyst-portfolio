@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 const highlights = [
   { value: "$1B+", label: "Monad TVL analyzed" },
   { value: "20+", label: "Robinhood US stocks & ETFs tracked" },
+  { value: "300+", label: "DEXs and $2.2B+ TVL" },
 ];
 
 export default function ResearchHighlight() {
@@ -20,17 +21,17 @@ export default function ResearchHighlight() {
           From Data to Insight
         </motion.h2>
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-3xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-10">
           {highlights.map((item, i) => (
             <motion.div
               key={item.label}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.15 }}
+              transition={{ delay: i * 0.12 }}
               className="text-center"
             >
-              <div className="text-5xl md:text-6xl font-semibold text-accent mb-3 tracking-tight">
+              <div className="text-4xl md:text-5xl font-semibold text-accent mb-3 tracking-tight">
                 {item.value}
               </div>
               <p className="text-sm text-muted">{item.label}</p>
