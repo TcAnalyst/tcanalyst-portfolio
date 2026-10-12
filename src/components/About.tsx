@@ -13,19 +13,19 @@ export default function About() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl md:text-4xl font-semibold mb-14 tracking-tight">
-            Turning Blockchain Data Into Insights
+            I read the chain so you don’t have to
           </h2>
 
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div className="space-y-6 text-muted leading-relaxed text-[15px]">
               <p>
-                Hi, I’m Tochukwu ilechukwu. I&apos;m a DeFi Data Analyst and Researcher focused on turning on-chain data into applicable solutions across protocols, markets, and user behavior .
+                I’m a DeFi data analyst and researcher. I take on-chain data and turn it into answers that protocols can use
               </p>
               <p>
-                I build data-based dashboards to explore protocol activity, user behavior, liquidity, and market trends, using these analyses as the foundation for in-depth research reports .
+                I build dashboards to track what’s happening inside a protocol: how people use it, where liquidity sits, and how the market around it is moving. Those dashboards become the base for my research reports
               </p>
               <p>
-                I investigate what is happening on-chain, why it is happening, and what it means for the a DeFi project or broader ecosystem and in turn turn them to solutions.
+                For any DeFi project or ecosystem, I look at three things: what’s happening on-chain, why it’s happening, and what the team should do about it
               </p>
             </div>
 
