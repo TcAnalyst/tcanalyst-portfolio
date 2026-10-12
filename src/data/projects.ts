@@ -1,12 +1,13 @@
 export const projects = [
   {
     id: 1,
-    title: "Robinhood RWAs — deployment to ownership",
+    title: "Robinhood RWAs (deployment to ownership)",
     description:
-      "Most RWA dashboards answer what happened—TVL, volume, users, or transactions. This dashboard asks a different question: How does an on-chain stock market actually form? Using on-chain data from Robinhood Chain, this research follows the lifecycle of tokenized equities from their initial deployment to ownership formation, trading activity, and participant behavior. Rather than presenting isolated metrics, each visualization is designed to answer a specific research question about the market's evolution.",
+      "Most RWA dashboards answer what happened - TVL, volume, users, or transactions. This dashboard asks a different question: How does an on-chain stock market actually form? Using on-chain data from Robinhood Chain, this research follows the lifecycle of tokenized equities from their initial deployment to ownership formation, trading activity, and participant behavior. Rather than presenting isolated metrics, each visualization is designed to answer a specific research question about the market's evolution.",
     tags: ["SQL", "Dune Analytics", "On-Chain Analytics", "RWA", "User Behavior"],
     link: "https://dune.com/tcanalyst/robinhood-rwa",
     cta: "View Project →",
+    image: "/Robinhood.png",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ export const projects = [
     tags: ["SQL", "Dune Analytics", "RWAs", "DeFi", "On-Chain Research"],
     link: "https://dune.com/tcanalyst/edel-finance",
     cta: "View Project →",
+    image: "/Edel.png",
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ export const projects = [
     tags: ["SQL", "Dune Analytics", "distribution analytics", "Liquidity", "holder growth"],
     link: "https://dune.com/tcanalyst/dollarindex",
     cta: "View Project →",
+    image: "/Index.png",
   },
   {
     id: 4,
@@ -34,5 +37,6 @@ export const projects = [
     tags: ["SQL", "Dune Analytics", "DeFi", "blockchain"],
     link: "https://dune.com/tcanalyst/monad",
     cta: "View Project →",
+    image: "/Monad.png",
   },
 ];
