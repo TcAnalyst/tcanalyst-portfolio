@@ -31,15 +31,16 @@ export default function ProjectCard({
       className="group border border-border rounded-2xl overflow-hidden bg-surface hover:border-accent/40 hover:shadow-soft transition-all duration-300"
     >
       {/* Dashboard Image */}
-      <div className="relative h-52 w-full overflow-hidden border-b border-border bg-background">
-        <Image
-          src={image}
-          alt={title}
-          fill
-          className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
-          sizes="(max-width: 768px) 100vw, 50vw"
-        />
-      </div>
+<div className="relative h-48 w-full overflow-hidden border-b border-border bg-background">
+  <Image
+    src={image}
+    alt={title}
+    fill
+    className="object-cover object-left-top group-hover:scale-[1.03] transition-transform duration-500"
+    sizes="(max-width: 768px) 100vw, 50vw"
+    priority={index < 2}
+  />
+</div>
 
       <div className="p-7">
         <h3 className="text-xl font-medium mb-3 group-hover:text-accent transition-colors">
