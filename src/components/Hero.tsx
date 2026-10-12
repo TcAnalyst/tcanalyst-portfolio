@@ -19,11 +19,11 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg md:text-xl text-muted mb-5 max-w-2xl leading-relaxed">
-            I turn on-chain data into meaningful insights across protocols, markets, and user behavior.
+            I utilise on-chain data to understand how protocols, markets, and users behave
           </p>
 
           <p className="text-base text-muted/80 mb-12 max-w-2xl leading-relaxed">
-            I build data-based dashboards that provides solution for DeFi projects and products.
+            Then I build dashboards that give DeFi teams clear answers about their product
           </p>
 
           <div className="flex flex-wrap gap-4 mb-14">
