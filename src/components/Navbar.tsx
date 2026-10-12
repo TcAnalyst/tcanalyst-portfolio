@@ -8,8 +8,6 @@ const navLinks = [
   { name: "About", href: "#about" },
   { name: "Work", href: "#work" },
   { name: "Research", href: "#research" },
-  { name: "Experience", href: "#experience" },
-  { name: "Education", href: "#education" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -27,22 +25,21 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-background/80 backdrop-blur-md border-b border-border"
+          ? "bg-background/80 backdrop-blur-xl border-b border-border"
           : "bg-transparent"
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#home" className="text-sm font-medium tracking-tight">
+        <a href="#home" className="text-sm font-medium tracking-tight text-cream">
           Tcanalyst
         </a>
 
-        {/* Desktop */}
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="text-sm text-muted hover:text-white transition-colors"
+              className="text-sm text-muted hover:text-accent transition-colors"
             >
               {link.name}
             </a>
@@ -57,7 +54,6 @@ export default function Navbar() {
           </a>
         </nav>
 
-        {/* Mobile button */}
         <button
           className="md:hidden text-muted"
           onClick={() => setMobileOpen(!mobileOpen)}
@@ -73,14 +69,13 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile menu */}
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-background/95 backdrop-blur-md border-b border-border"
+            className="md:hidden bg-background/95 backdrop-blur-xl border-b border-border"
           >
             <div className="px-6 py-6 flex flex-col gap-4">
               {navLinks.map((link) => (
@@ -88,7 +83,7 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="text-sm text-muted hover:text-white"
+                  className="text-sm text-muted hover:text-accent"
                 >
                   {link.name}
                 </a>

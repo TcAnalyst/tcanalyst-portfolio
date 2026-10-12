@@ -21,34 +21,33 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <motion.article
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.1 }}
-      className="group border border-border rounded-xl overflow-hidden bg-surface/30 hover:border-accent/40 transition-all"
+      className="group border border-border rounded-2xl overflow-hidden bg-surface hover:border-accent/40 hover:shadow-soft transition-all duration-300"
     >
-      {/* Abstract preview placeholder */}
-      <div className="h-48 bg-background border-b border-border relative overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center opacity-30">
-          <div className="grid grid-cols-6 gap-2 p-6 w-full">
-            {Array.from({ length: 24 }).map((_, i) => (
+      <div className="h-44 bg-background border-b border-border relative overflow-hidden">
+        <div className="absolute inset-0 flex items-center justify-center opacity-40">
+          <div className="grid grid-cols-6 gap-2 p-8 w-full">
+            {Array.from({ length: 18 }).map((_, i) => (
               <div
                 key={i}
-                className="h-2 rounded-full bg-accent/50"
+                className="h-1.5 rounded-full bg-accent/60"
                 style={{
-                  width: `${40 + (i % 7) * 10}%`,
-                  opacity: 0.2 + (i % 4) * 0.2,
+                  width: `${35 + (i % 6) * 12}%`,
+                  opacity: 0.25 + (i % 4) * 0.2,
                 }}
               />
             ))}
           </div>
         </div>
-        <div className="absolute bottom-3 left-4 text-xs text-muted/50 tracking-wider uppercase">
+        <div className="absolute bottom-3 left-5 text-[11px] text-muted/60 tracking-wider uppercase">
           Dashboard Preview
         </div>
       </div>
 
-      <div className="p-6">
+      <div className="p-7">
         <h3 className="text-xl font-medium mb-3 group-hover:text-accent transition-colors">
           {title}
         </h3>
@@ -69,7 +68,7 @@ export default function ProjectCard({
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex text-sm text-accent hover:underline"
+          className="inline-flex text-sm text-accent hover:underline underline-offset-4"
         >
           {cta}
         </a>

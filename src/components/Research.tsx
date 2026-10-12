@@ -6,7 +6,7 @@ import ResearchCard from "./ResearchCard";
 
 export default function Research() {
   return (
-    <section id="research" className="py-24 border-t border-border">
+    <section id="research" className="py-28 border-t border-border">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

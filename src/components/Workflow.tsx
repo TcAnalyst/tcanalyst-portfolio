@@ -13,7 +13,7 @@ const steps = [
 
 export default function Workflow() {
   return (
-    <section className="py-24 border-t border-border">
+    <section className="py-28 border-t border-border">
       <div className="max-w-6xl mx-auto px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -24,7 +24,7 @@ export default function Workflow() {
           How I Work
         </motion.h2>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {steps.map((step, i) => (
             <motion.div
               key={step.num}
@@ -32,10 +32,10 @@ export default function Workflow() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              className="p-5 border border-border rounded-xl"
+              className="p-6 border border-border rounded-2xl bg-surface hover:border-accent/30 transition-colors"
             >
-              <div className="text-xs text-accent font-medium mb-2">{step.num}</div>
-              <h3 className="text-lg font-medium mb-2">{step.title}</h3>
+              <div className="text-xs text-accent font-medium mb-3">{step.num}</div>
+              <h3 className="text-lg font-medium mb-2 text-cream">{step.title}</h3>
               <p className="text-sm text-muted leading-relaxed">{step.desc}</p>
             </motion.div>
           ))}

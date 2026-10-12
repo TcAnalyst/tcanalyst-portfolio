@@ -9,16 +9,21 @@ html {
 }
 
 body {
-  @apply bg-background text-white antialiased;
+  @apply bg-background text-cream antialiased;
 }
 
 ::-webkit-scrollbar {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #0a0a0b;
+  background: #0f0c0a;
 }
 ::-webkit-scrollbar-thumb {
-  background: #27272a;
+  background: #3a2f28;
   border-radius: 3px;
+}
+
+/* Subtle section divider */
+.section-divider {
+  @apply border-t border-border;
 }

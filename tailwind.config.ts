@@ -9,15 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#140f0c",      // deep warm brown-black
-        surface: "#1c1612",         // slightly lighter brown
-        border: "#2a211c",          // soft brown border
-        muted: "#a89f94",           // warm gray-brown text
-        accent: "#c9a66b",          // warm gold/tan accent
-        "accent-dim": "#a88b4f",    // darker gold
+        background: "#0f0c0a",
+        surface: "#1a1512",
+        "surface-2": "#221c18",
+        border: "#2e261f",
+        muted: "#a89a8c",
+        accent: "#d4a574",
+        "accent-dim": "#b8894f",
+        cream: "#f5f0e8",
       },
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
+      },
+      boxShadow: {
+        soft: "0 4px 20px -2px rgba(0,0,0,0.4)",
+        glow: "0 0 30px -5px rgba(212, 165, 116, 0.15)",
       },
     },
   },

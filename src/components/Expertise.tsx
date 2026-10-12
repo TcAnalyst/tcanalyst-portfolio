@@ -5,7 +5,7 @@ import { expertise } from "../data/expertise";
 
 export default function Expertise() {
   return (
-    <section className="py-24 border-t border-border">
+    <section className="py-28 border-t border-border">
       <div className="max-w-6xl mx-auto px-6">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -20,13 +20,13 @@ export default function Expertise() {
           {expertise.map((item, i) => (
             <motion.div
               key={item.title}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="p-6 border border-border rounded-xl bg-surface/50 hover:border-accent/30 transition-colors"
+              className="p-7 border border-border rounded-2xl bg-surface hover:border-accent/40 hover:shadow-soft transition-all duration-300"
             >
-              <h3 className="text-lg font-medium mb-4">{item.title}</h3>
+              <h3 className="text-lg font-medium mb-4 text-cream">{item.title}</h3>
               <p className="text-sm text-muted leading-relaxed mb-6">
                 {item.description}
               </p>
